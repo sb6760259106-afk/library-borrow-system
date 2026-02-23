@@ -1,7 +1,8 @@
-pip
+reportlab
 streamlit
 pandas
 plotly
 openpyxl
 report_page
+
 
