@@ -19,23 +19,7 @@ if "user" not in st.session_state:
 if "page" not in st.session_state:
     st.session_state["page"] = "books"
 
-# =========================
-# Hide Streamlit auto multipage nav
-# =========================
-st.markdown(
-    """
-    <style>
-    section[data-testid="stSidebarNav"] {display: none !important;}
-    div[data-testid="stSidebarNav"] {display: none !important;}
-    nav[data-testid="stSidebarNav"] {display: none !important;}
-    div[data-testid="stSidebarNavItems"] {display: none !important;}
-    div[data-testid="stSidebarNavSeparator"] {display: none !important;}
-    aside ul:has(a[href*="?page="]) {display: none !important;}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
-
+#
 # =========================
 # Page config
 # =========================
